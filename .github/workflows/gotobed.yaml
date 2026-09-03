@@ -3,7 +3,7 @@ name: gotobed
 on:
   workflow_dispatch:
   schedule:
-    - cron: '10 16 * * *'
+    - cron: '15 16 * * *'
 
 jobs:
   build:
