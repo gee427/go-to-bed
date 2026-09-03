@@ -9,8 +9,8 @@ name: gotobed
 
 on:
   workflow_dispatch:  # 允许手动触发
-  schedule:           # 每晚 21:50（北京时间）执行；GitHub cron 为 UTC，需减 8 小时
-    - cron: '50 13 * * *'
+  schedule:           # [临时测试] 今晚 22:40（北京时间）触发，验证定时任务是否正常
+    - cron: '40 14 * * *'
 
 
 jobs:
