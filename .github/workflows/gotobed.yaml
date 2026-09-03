@@ -8,9 +8,9 @@ name: gotobed
 #    - cron: '50 10 * * *' # 10对应的是北京时间晚上六点 50是分钟 表示每天晚上六点五十执行，可以改成任意时间测试
 
 on:
- workflow_dispatch:  # 允许手动触发
- schedule: # 每晚 21:50（北京时间）执行；GitHub cron 为 UTC，需减 8 小时
- - cron: '50 13 * * *'
+  workflow_dispatch:  # 允许手动触发
+  schedule:           # 每晚 21:50（北京时间）执行；GitHub cron 为 UTC，需减 8 小时
+    - cron: '50 13 * * *'
 
 
 jobs:
